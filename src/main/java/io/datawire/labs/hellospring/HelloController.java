@@ -23,6 +23,6 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String sayHelloNaveen() {
-        return String.format("Hello Naveen, Am running fine No worries.. commietted code!!");
+        return String.format("Hello Naveen, Am running fine No worries.. feature commit-1!!");
     }
 }
