@@ -1,10 +1,9 @@
 package io.datawire.labs.hellospring;
 
-import java.util.concurrent.TimeUnit;
-
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.concurrent.TimeUnit;
 
 @RestController
 public class HelloController {
@@ -23,6 +22,6 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String sayHelloNaveen() {
-        return String.format("Hello Naveen, Am running fine No worries..master commit-2!!");
+        return String.format("Hello Naveen, Am running fine No worries.. feature commit-2!!");
     }
 }
