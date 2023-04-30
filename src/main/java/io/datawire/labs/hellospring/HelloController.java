@@ -18,7 +18,11 @@ public class HelloController {
                                       TimeUnit.MILLISECONDS.toMinutes(millis),
                                       TimeUnit.MILLISECONDS.toSeconds(millis) -
                                       TimeUnit.MINUTES.toSeconds(TimeUnit.MILLISECONDS.toMinutes(millis)));
-        return String.format("Hello, Spring! (up %s, %s)", uptime, System.getenv("BUILD_PROFILE"));
+        return String.format("Hello Naveen, Spring! (up %s, %s)", uptime, System.getenv("BUILD_PROFILE"));
     }
 
+    @GetMapping("/hello")
+    public String sayHelloNaveen() {
+        return String.format("Hello Naveen, Am running fine No worries..!!");
+    }
 }
